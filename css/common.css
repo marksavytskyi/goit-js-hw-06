@@ -22,3 +22,37 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.gallery {
+  padding-left: 0;
+
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 15px;
+  flex-basis: calc((100% - 6 * 15px) / 3);
+  height: 200px;
+  transition: height linear 300ms;
+}
+
+.item:hover {
+  height: 250px;
+  
+}
+
+img {
+  border-radius: 30px;
+  display: block;
+  height: 100%;
+
+}
